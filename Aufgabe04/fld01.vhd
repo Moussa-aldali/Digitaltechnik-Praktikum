@@ -1,3 +1,4 @@
+
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -32,9 +33,10 @@ begin
   end case;
   if rst = '1' then 
     state <= zero;
-    end if; 
+  end if;
   end process;
         
     y <= '1' when state = flanke else '0';
     
   end arch;
+       
